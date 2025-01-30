@@ -1,0 +1,19 @@
+{
+  "name": "nest-application",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/nest-application/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/nest-application",
+        "main": "libs/nest-application/src/index.ts",
+        "tsConfig": "libs/nest-application/tsconfig.lib.json",
+        "assets": ["libs/nest-application/*.md"]
+      }
+    }
+  }
+}

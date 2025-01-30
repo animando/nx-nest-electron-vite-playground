@@ -5,8 +5,6 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -14,7 +12,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@electron-nx/nest-application": ["libs/nest-application/src/index.ts"],
+      "@electron-nx/nestjs-ipc": ["libs/nestjs-ipc/src/index.ts"],
+      "@electron-nx/nestjs-websocket": ["libs/nestjs-websocket/src/index.ts"],
+      "@electron-nx/prerender-api": ["libs/prerender-api/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

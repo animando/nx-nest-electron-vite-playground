@@ -1,0 +1,19 @@
+{
+  "name": "nestjs-ipc",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/nestjs-ipc/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/nestjs-ipc",
+        "main": "libs/nestjs-ipc/src/index.ts",
+        "tsConfig": "libs/nestjs-ipc/tsconfig.lib.json",
+        "assets": ["libs/nestjs-ipc/*.md"]
+      }
+    }
+  }
+}

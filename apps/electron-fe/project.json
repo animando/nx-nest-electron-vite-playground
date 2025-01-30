@@ -1,0 +1,9 @@
+{
+  "name": "electron-fe",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/electron-fe/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project electron-fe --web",
+  "targets": {}
+}

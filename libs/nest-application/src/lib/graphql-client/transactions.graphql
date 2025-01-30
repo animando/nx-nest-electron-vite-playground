@@ -1,0 +1,16 @@
+query LatestTransactions($limit: Int, $nextToken: String, $search: String) {
+  latestTransactions(limit: $limit, nextToken: $nextToken, search: $search) {
+    meta {
+      nextToken
+      count
+    }
+    data {
+      trxId
+      transactionType
+      transactionDescription
+      transactionDate
+      createdAt
+      updatedAt
+    }
+  }
+}

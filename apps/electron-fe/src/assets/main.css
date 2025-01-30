@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@import './base.css';
+
+body {
+  overflow: hidden;
+  user-select: none;
+}
+
+code {
+  font-weight: 600;
+  padding: 3px 5px;
+  border-radius: 2px;
+  background-color: var(--color-background-mute);
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    SF Mono,
+    Menlo,
+    Consolas,
+    Liberation Mono,
+    monospace;
+  font-size: 85%;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}

@@ -55,5 +55,13 @@
         "linter": "eslint"
       }
     }
+  },
+  "defaultProject": "electron-app",
+  "targetDefaults": {
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
   }
 }
